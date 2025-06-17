@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Header from './Header'
-import Home from "./Home";
-import About from "./About";
+import Header from './Header/Header'
+import Home from "./Home/Home";
+import About from "./About/About";
 import { Fragment } from "react";
-import Catalog from "./Catalog";
+import Catalog from "./Catalog/Catalog";
+import Footer from "./Footer/Footer";
 
 function App() {  
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path ='/about' element =  {<About />}/>
     <Route path ='/catalog' element =  {<Catalog />}/>
     </Routes>
+    <Footer/>
     </Fragment>
   )
 }
